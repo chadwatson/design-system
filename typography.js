@@ -28,3 +28,5 @@ export const fontSize = cache(value => {
       return 16;
   }
 });
+
+export const rem = value => `${value / fontSize()}rem`;
