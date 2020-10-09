@@ -2,15 +2,8 @@
   "name": "@chadwatson/design-system",
   "version": "0.1.1",
   "description": "My personal design system for JavaScript apps",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "typesVersions": {
-    ">=3.1": {
-      "*": [
-        "ts3.1/*"
-      ]
-    }
-  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "git@github.com:chadwatson/design-system.git",
   "author": "Chad Watson <chadwatsn@gmail.com>",
   "license": "MIT",
