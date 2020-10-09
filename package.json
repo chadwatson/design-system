@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "prepublish": "tsc"
+    "prepublishOnly": "tsc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.x",
