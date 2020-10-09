@@ -1,5 +1,5 @@
 {
-  "name": "design-system",
+  "name": "@chadwatson/design-system",
   "version": "0.1.0",
   "description": "My personal design system for JavaScript apps",
   "main": "./lib/index.js",
@@ -15,7 +15,8 @@
   "author": "Chad Watson <chadwatsn@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "tsc"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.x",
