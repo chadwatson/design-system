@@ -1,7 +1,7 @@
 import { fontSize } from "./typography";
 import { cache } from "./utils";
 
-export const space = cache(value => {
+export const space = cache((value) => {
   switch (value) {
     case 100:
       return fontSize() * 0.25;
