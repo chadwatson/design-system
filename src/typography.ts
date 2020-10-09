@@ -1,6 +1,6 @@
 import { cache } from "./utils";
 
-export const fontSize = cache(value => {
+export const fontSize = cache((value) => {
   switch (value) {
     case 100:
       return 12;
@@ -29,4 +29,4 @@ export const fontSize = cache(value => {
   }
 });
 
-export const rem = value => `${value / fontSize()}rem`;
+export const rem = (value: number) => `${value / fontSize()}rem`;

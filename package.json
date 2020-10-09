@@ -2,10 +2,21 @@
   "name": "design-system",
   "version": "0.1.0",
   "description": "My personal design system for JavaScript apps",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "typesVersions": {
+    ">=3.1": {
+      "*": [
+        "ts3.1/*"
+      ]
+    }
+  },
   "repository": "git@github.com:chadwatson/design-system.git",
   "author": "Chad Watson <chadwatsn@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
@@ -19,6 +30,6 @@
     "eslint-plugin-react-hooks": "1.x",
     "eslint_d": "^8.0.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.5"
+    "typescript": "^4.0.3"
   }
 }
