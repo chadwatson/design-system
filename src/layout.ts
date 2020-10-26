@@ -1,4 +1,4 @@
-import { fontSize } from "./typography";
+import { fontSize, rem } from "./typography";
 import { cache } from "./utils";
 
 export const space = cache((value) => {
@@ -37,5 +37,30 @@ export const space = cache((value) => {
       return fontSize() * 48;
     default:
       return fontSize();
+  }
+});
+
+export const breakpoint = cache((value) => {
+  switch (value) {
+    case 100:
+      return `(min-width: ${rem(480)})`;
+    case 200:
+      return `(min-width: ${rem(600)})`;
+    case 300:
+      return `(min-width: ${rem(768)})`;
+    case 400:
+      return `(min-width: ${rem(960)})`;
+    case 500:
+      return `(min-width: ${rem(1024)})`;
+    case 600:
+      return `(min-width: ${rem(1220)})`;
+    case 700:
+      return `(min-width: ${rem(1440)})`;
+    case 800:
+      return `(min-width: ${rem(1620)})`;
+    case 900:
+      return `(min-width: ${rem(2000)})`;
+    default:
+      return "(min-width: 0px)";
   }
 });
