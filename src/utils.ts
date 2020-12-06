@@ -2,14 +2,17 @@ export function always<A>(x: A) {
   return () => x;
 }
 
-export function cache<R>(fn: (x: number) => R) {
-  const results: { [key: number]: R } = {};
+export function cache<R, TValue extends number = number>(
+  fn: (x?: TValue) => R
+) {
+  const results: { [key: string]: R } = {};
 
-  return (x: number | undefined = 0) => {
-    if (!(x in results)) {
-      results[x] = fn(x);
+  return (x?: TValue) => {
+    const key = x ?? "()";
+    if (!(key in results)) {
+      results[key] = fn(x);
     }
 
-    return results[x];
+    return results[key];
   };
 }

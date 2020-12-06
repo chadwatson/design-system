@@ -1,4 +1,9 @@
 export { cache } from "./utils";
-export { fontSize, rem } from "./typography";
-export { space, breakpoint } from "./layout";
-export { elevation, shadowOutline, shadowInner } from "./effects";
+export { fontSize, rem, FontSizeValue } from "./typography";
+export { space, breakpoint, SpaceValue, BreakpointValue } from "./layout";
+export {
+  elevation,
+  shadowOutline,
+  shadowInner,
+  ElevationValue,
+} from "./effects";

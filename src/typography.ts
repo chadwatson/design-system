@@ -1,6 +1,19 @@
 import { cache } from "./utils";
 
-export const fontSize = cache((value) => {
+export type FontSizeValue =
+  | 100
+  | 200
+  | 300
+  | 400
+  | 500
+  | 600
+  | 700
+  | 800
+  | 900
+  | 1000
+  | 1100;
+
+export const fontSize = cache((value?: FontSizeValue) => {
   switch (value) {
     case 100:
       return 12;

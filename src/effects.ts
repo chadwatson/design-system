@@ -1,6 +1,8 @@
 import { cache, always } from "./utils";
 
-export const elevation = cache(value => {
+export type ElevationValue = 0 | 100 | 200 | 300 | 400 | 500;
+
+export const elevation = cache((value?: ElevationValue) => {
   switch (value) {
     case 0:
       return "box-shadow: none;";

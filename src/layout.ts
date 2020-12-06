@@ -1,7 +1,25 @@
 import { fontSize, rem } from "./typography";
 import { cache } from "./utils";
 
-export const space = cache((value) => {
+export type SpaceValue =
+  | 100
+  | 200
+  | 300
+  | 400
+  | 500
+  | 600
+  | 700
+  | 800
+  | 900
+  | 1000
+  | 1100
+  | 1200
+  | 1300
+  | 1400
+  | 1500
+  | 1600;
+
+export const space = cache((value?: SpaceValue) => {
   switch (value) {
     case 100:
       return fontSize() * 0.25;
@@ -40,7 +58,18 @@ export const space = cache((value) => {
   }
 });
 
-export const breakpoint = cache((value) => {
+export type BreakpointValue =
+  | 100
+  | 200
+  | 300
+  | 400
+  | 500
+  | 600
+  | 700
+  | 800
+  | 900;
+
+export const breakpoint = cache((value?: BreakpointValue) => {
   switch (value) {
     case 100:
       return `(min-width: ${rem(480)})`;
