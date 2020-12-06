@@ -7,3 +7,4 @@ export {
   shadowInner,
   ElevationValue,
 } from "./effects";
+export { default as VisiblyHiddenInput } from "./components/VisiblyHiddenInput";
