@@ -1,6 +1,7 @@
 export { cache } from "./utils";
 export { fontSize, rem, FontSizeValue } from "./typography";
-export { space, breakpoint, SpaceValue, BreakpointValue } from "./layout";
+export { space, SpaceValue } from "./layout";
+export { bp, BreakpointValue } from "./media-queries";
 export {
   elevation,
   shadowOutline,
