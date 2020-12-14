@@ -1,6 +1,6 @@
 {
   "name": "@chadwatson/design-system",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "My personal design system for JavaScript apps",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
