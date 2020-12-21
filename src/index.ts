@@ -9,3 +9,4 @@ export {
   ElevationValue,
 } from "./effects";
 export { default as VisiblyHiddenInput } from "./components/VisiblyHiddenInput";
+export { default as VisiblyHidden } from "./components/VisiblyHidden";
