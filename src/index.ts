@@ -1,4 +1,4 @@
-export { cache } from "./utils";
+export { cache, defineColor } from "./utils";
 export { fontSize, rem, FontSizeValue } from "./typography";
 export { space, SpaceValue } from "./layout";
 export { bp, BreakpointValue } from "./media-queries";
